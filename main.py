@@ -30,7 +30,7 @@ print("Sorted states:")
 print(states)
 
 numbers.sort()
-print("Sorted numbers (incorrect):")
+print("Sorted numbers?")
 print(numbers)
 
 def compare_numbers(value1: number, value2: number):

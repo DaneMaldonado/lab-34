@@ -26,7 +26,7 @@ states.sort()
 console.log("Sorted states:")
 console.log(states)
 numbers.sort()
-console.log("Sorted numbers (incorrect):")
+console.log("Sorted numbers?")
 console.log(numbers)
 numbers.sort(function compare_numbers(value1: number, value2: number): number {
     return 0
