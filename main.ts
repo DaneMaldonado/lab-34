@@ -4,24 +4,24 @@ console.log("Numbers:")
 console.log(numbers)
 console.log("States:")
 console.log(states)
-function array_search(array: any[], search_term: any): number {
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] == search_term) {
-            return i
+function arraysearch(array: any[], search: any): number {
+    for (let a = 0; a < array.length; a++) {
+        if (array[a] == search) {
+            return a
         }
         
     }
-    return -1
+    return 1
 }
 
 console.log("Searching for 3 in numbers:")
-console.log(array_search(numbers, 3))
+console.log(arraysearch(numbers, 3))
 console.log("Searching for 8 in numbers:")
-console.log(array_search(numbers, 8))
-console.log("Searching for Georgia:")
-console.log(array_search(states, "Georgia"))
-console.log("Searching for New York:")
-console.log(array_search(states, "New York"))
+console.log(arraysearch(numbers, 8))
+console.log("Searching for Illinois")
+console.log(arraysearch(states, "Illinois"))
+console.log("Searching for Michigan")
+console.log(arraysearch(states, "Michigan"))
 states.sort()
 console.log("Sorted states:")
 console.log(states)
@@ -29,7 +29,5 @@ numbers.sort()
 console.log("Sorted numbers (incorrect):")
 console.log(numbers)
 numbers.sort(function compare_numbers(value1: number, value2: number): number {
-    return value1 - value2
+    return 0
 })
-console.log("Properly sorted numbers:")
-console.log(numbers)
